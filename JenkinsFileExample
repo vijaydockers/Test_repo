@@ -1,0 +1,25 @@
+pipeline{
+    agent {label "master"}
+    stages{
+        stage('Clone'){
+            steps {
+                bat "echo Source code clone is going on"
+            }
+        }
+        stage('Build'){
+            steps {
+                bat "echo Build is going on"
+            }
+        }
+        stage('Test'){
+            steps {
+                bat "echo Test is performing"
+            }
+        }
+        stage('Deploy'){
+            steps {
+                bat "echo Deploy is in progress"
+            }
+        }
+    }
+}
